@@ -1,0 +1,291 @@
+html {
+    background-color: rgba(20, 19, 19, 0.9);
+    background-image: url("/assets/img/htmlbgoriginal.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: relative;
+    background-color: rgba(109, 99, 201, 0.8);
+    width: 1000px;
+    height: 500px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.score-box {
+    position: relative;
+    background-color: rgba(48, 48, 48, 0.8);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(10, 10, 9);
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    font-family: monospace;
+}
+
+
+h3 {
+    background-color: rgb(255, 222, 13, 0.98);
+    left: 20px;
+    font-size: 40px;
+    border-radius: 10px;
+    margin: auto;
+    display: inline-block;
+}
+
+
+.player-score {
+    position: absolute;
+    margin: 0;
+    right: 5px;
+    bottom: 0px;
+    font-size: 50px;
+    color : rgb(255, 222, 13, 0.98);
+    display: inline;
+}
+
+
+.comp-score {
+    position: absolute;
+    margin: 0;
+    left: 5px;
+    bottom: 0px;
+    font-size: 50px;
+    color : rgb(255, 222, 13, 0.98);
+}
+
+.player-weapons-box {
+    position: absolute;
+    background-color: rgba(48, 48, 48, 0.8);
+    border-radius: 10px;
+    height: 170px;
+    width: 300px;
+    right: 20px;
+    top: 30px;
+    text-align: center;
+}
+
+
+#rock {
+    background-image: url("/assets/img/r.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    position: absolute;
+    border-style: solid;
+    border-color: rgb(32, 31, 31);
+    border-width: 7px;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 134px;
+    width: 88px;
+    right: 3px;
+    top: 15px;
+    margin: 4px;
+}
+#paper { 
+    background-image: url("/assets/img/p.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    position: absolute;
+    border-style: solid;
+    border-color: rgb(32, 31, 31);
+    border-width: 7px;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 134px;
+    width: 88px;
+    right: 100px;
+    top: 15px;
+    margin: 4px;
+}
+#scissors {
+    background-image: url("/assets/img/s.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    position: absolute;
+    border-style: solid;
+    border-color: rgb(32, 31, 31);
+    border-width: 7px;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 134px;
+    width: 88px;
+    left: 3px;
+    top: 15px;
+    margin: 4px;
+}
+#rock:hover, #paper:hover, #scissors:hover {
+    border-color: rgb(255, 222, 13, 0.9);
+}
+#rock:active, #paper:active, #scissors:active {
+    border-color: rgb(46, 206, 6);
+}
+
+.comp-gif-box {
+    position: absolute;
+    background-color: rgba(48, 48, 48, 0.8);
+    border-radius: 10px;
+    left: 20px;
+    top: 30px; 
+    height: 170px;
+    width: 300px;
+}
+
+.comp-gif-img {
+    position: absolute;
+    border-radius: 0px;
+    left: 30px;
+    top: 9px;
+}
+
+
+#clicked-r {
+    position: absolute;
+    right: 45px;
+    height: 100px;
+}
+#clicked-p {
+    position: absolute;
+    right: 140px;
+    height: 100px;
+}
+#clicked-s {
+    position: absolute;
+    right: 245px;
+    height: 100px;
+}
+#compguess-r {
+    position: absolute;
+    left: 145px;
+    height: 100px;
+}
+#compguess-p {
+    position: absolute;
+    left: 145px;
+    height: 100px;
+}
+#compguess-s {
+    position: absolute;
+    left: 145px;
+    height: 100px;
+}
+
+.win-container {
+    position: absolute;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    left: 370px;
+    top: 300px;
+    margin: auto;
+    justify-content: center;
+}
+
+.winner {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 30px;
+    margin: auto;
+}
+
+.rounds-input {
+    position: absolute;
+    left: 30px;
+    top: 430px;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+#input-value {
+    width: 50px;
+}
+
+.popup-container {
+    position: absolute;
+    background-color: rgba(48, 48, 48, 0.97);
+    border-radius: 15px;
+    width: 350px;
+    height: 350px;
+    left: 325px;
+    top: 40px;
+    animation: animation 1000ms linear both;
+}
+
+  
+  @keyframes animation { 
+    0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 100, 0, 1); }
+    4.5% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 51.473, 0, 1); }
+    9.01% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 12.002, 0, 1); }
+    13.51% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -8.742, 0, 1); }
+    17.92% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -13.922, 0, 1); }
+    29.03% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -3.229, 0, 1); }
+    34.63% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.593, 0, 1); }
+    40.14% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1.543, 0, 1); }
+    62.36% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.171, 0, 1); }
+    84.68% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.019, 0, 1); }
+    100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+  }
+  
+.game-over {
+    position: absolute;
+    background-color: rgb(255, 222, 13);
+    border-radius: 10px;
+    font-family: monospace;
+    width: 170px;
+    height: 30px;
+    left: 80px;
+    top: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.winner-call {
+    position: absolute;
+    font-family: monospace;
+    font-size: 35px;
+    width: 170px;
+    left: 90px;
+    top: 100px;
+    text-align: center;
+}
+
+.prize {
+    position: absolute;
+    left:65px;
+    bottom: 120px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.reset{
+    position: absolute;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(219, 207, 207, 0.26);
+    width: 180px;
+    height: 70px;
+    left: 85px;
+    top: 250px;
+    font-family: monospace;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.reset:hover {
+    background-color: rgb(219, 207, 207);
+}
+
+.glow {
+    position: absolute;
+    left: 270px;
+    top: 550px;
+}
