@@ -8,7 +8,7 @@ html {
 
 .container {
     position: relative;
-    background-color: rgba(99, 147, 201, 0.8);
+    background-color: rgba(7, 71, 144, 0.8);
     width: 1000px;
     height: 500px;
     border-radius: 20px;
@@ -317,7 +317,7 @@ h3 {
     color: rgba(52, 240, 6, 0.8);
 }
 
- 
+
 
 .reset {
     position: absolute;
