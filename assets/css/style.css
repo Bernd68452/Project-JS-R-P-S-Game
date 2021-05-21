@@ -3,8 +3,32 @@ html {
     background-image: url("/assets/img/htmlbg.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+
 
 }
+
+@media (max-width: 300px) {
+    html {
+        background-image: url(/assets/img/htmlbg.png);
+
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    html {
+        background-image: url(/assets/img/htmlbg.png);
+    }
+}
+
+@media (min-width: 2560px) {
+    html {
+        background-image: url(/assets/img/htmlbg.png);
+    }
+}
+
 
 .container {
     position: relative;
@@ -336,14 +360,3 @@ h3 {
 .reset:hover {
     background-color: rgb(219, 207, 207);
 }
-
-
-@media only screen and (min-width : 200px) {}
-
-@media only screen and (min-width : 320px) {}
-
-@media only screen and (min-width : 768px) {}
-
-@media only screen and (min-width : 1200px) {}
-
-@media only screen and (min-width : 2560px) {}
