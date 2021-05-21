@@ -10,20 +10,20 @@ html {
 
 }
 
-@media (max-width: 300px) {
+@media only screen and (max-width: 300px) {
     html {
         background-image: url(/assets/img/htmlbg.png);
 
     }
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
     html {
         background-image: url(/assets/img/htmlbg.png);
     }
 }
 
-@media (min-width: 2560px) {
+@media screen and (min-width: 2560px) {
     html {
         background-image: url(/assets/img/htmlbg.png);
     }
