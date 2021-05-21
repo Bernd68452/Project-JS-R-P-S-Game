@@ -1,13 +1,14 @@
 html {
     background-color: rgba(20, 19, 19, 0.9);
-    background-image: url("/assets/img/htmlbgoriginal.png");
+    background-image: url("/assets/img/htmlbg.png");
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 .container {
     position: relative;
-    background-color: rgba(109, 99, 201, 0.8);
+    background-color: rgba(99, 147, 201, 0.8);
     width: 1000px;
     height: 500px;
     border-radius: 20px;
@@ -27,7 +28,7 @@ html {
     font-family: monospace;
 }
 
-
+/* Score Header */
 h3 {
     background-color: rgb(255, 222, 13, 0.98);
     left: 20px;
@@ -37,14 +38,14 @@ h3 {
     display: inline-block;
 }
 
-
+/* Inside Score Box */
 .player-score {
     position: absolute;
     margin: 0;
     right: 5px;
     bottom: 0px;
     font-size: 50px;
-    color : rgb(255, 222, 13, 0.98);
+    color: rgb(255, 222, 13, 0.98);
     display: inline;
 }
 
@@ -55,7 +56,7 @@ h3 {
     left: 5px;
     bottom: 0px;
     font-size: 50px;
-    color : rgb(255, 222, 13, 0.98);
+    color: rgb(255, 222, 13, 0.98);
 }
 
 .player-weapons-box {
@@ -69,33 +70,32 @@ h3 {
     text-align: center;
 }
 
-
+/* Player Buttons */
 #rock {
     background-image: url("/assets/img/r.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: absolute;
-    border-style: solid;
     border-color: rgb(32, 31, 31);
-    border-width: 7px;
+    border-width: 10px;
     border-radius: 2px;
     cursor: pointer;
     height: 134px;
     width: 88px;
-    right: 3px;
+    right: 2px;
     top: 15px;
     margin: 4px;
 }
-#paper { 
+
+#paper {
     background-image: url("/assets/img/p.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: absolute;
-    border-style: solid;
     border-color: rgb(32, 31, 31);
-    border-width: 7px;
+    border-width: 10px;
     border-radius: 2px;
     cursor: pointer;
     height: 134px;
@@ -104,27 +104,33 @@ h3 {
     top: 15px;
     margin: 4px;
 }
+
 #scissors {
     background-image: url("/assets/img/s.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: absolute;
-    border-style: solid;
     border-color: rgb(32, 31, 31);
-    border-width: 7px;
+    border-width: 10px;
     border-radius: 2px;
     cursor: pointer;
     height: 134px;
     width: 88px;
-    left: 3px;
+    left: 6px;
     top: 15px;
     margin: 4px;
 }
-#rock:hover, #paper:hover, #scissors:hover {
-    border-color: rgb(255, 222, 13, 0.9);
+
+#rock:hover,
+#paper:hover,
+#scissors:hover {
+    border-color: rgba(226, 241, 11, 0.9);
 }
-#rock:active, #paper:active, #scissors:active {
+
+#rock:active,
+#paper:active,
+#scissors:active {
     border-color: rgb(46, 206, 6);
 }
 
@@ -133,7 +139,7 @@ h3 {
     background-color: rgba(48, 48, 48, 0.8);
     border-radius: 10px;
     left: 20px;
-    top: 30px; 
+    top: 30px;
     height: 170px;
     width: 300px;
 }
@@ -145,32 +151,37 @@ h3 {
     top: 9px;
 }
 
-
+/* Action Display */
 #clicked-r {
     position: absolute;
     right: 45px;
     height: 100px;
 }
+
 #clicked-p {
     position: absolute;
     right: 140px;
     height: 100px;
 }
+
 #clicked-s {
     position: absolute;
     right: 245px;
     height: 100px;
 }
+
 #compguess-r {
     position: absolute;
     left: 145px;
     height: 100px;
 }
+
 #compguess-p {
     position: absolute;
     left: 145px;
     height: 100px;
 }
+
 #compguess-s {
     position: absolute;
     left: 145px;
@@ -200,14 +211,18 @@ h3 {
 
 .rounds-input {
     position: absolute;
-    left: 30px;
-    top: 430px;
+    left: 320px;
+    top: 410px;
     font-family: monospace;
-    font-size: 16px;
+    font-size: 20px;
+    text-align: center;
+
 }
 
 #input-value {
-    width: 50px;
+    width: 52px;
+    font-size: 20px;
+    font-family: monospace;
 }
 
 .popup-container {
@@ -221,21 +236,57 @@ h3 {
     animation: animation 1000ms linear both;
 }
 
-  
-  @keyframes animation { 
-    0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 100, 0, 1); }
-    4.5% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 51.473, 0, 1); }
-    9.01% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 12.002, 0, 1); }
-    13.51% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -8.742, 0, 1); }
-    17.92% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -13.922, 0, 1); }
-    29.03% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -3.229, 0, 1); }
-    34.63% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.593, 0, 1); }
-    40.14% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1.543, 0, 1); }
-    62.36% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.171, 0, 1); }
-    84.68% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.019, 0, 1); }
-    100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
-  }
-  
+
+
+/* Generated with Bounce.js. http://bouncejs.com#%7Bl%3A1%2Cs%3A%5B%7BT%3A%22t%22%2Ce%3A%22b%22%2Cd%3A1000%2CD%3A0%2Cf%3A%7Bx%3A0%2Cy%3A100%7D%2Ct%3A%7Bx%3A0%2Cy%3A0%7D%2Cs%3A2%2Cb%3A4%7D%5D%7D */
+
+@keyframes animation {
+    0% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 100, 0, 1);
+    }
+
+    4.5% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 51.473, 0, 1);
+    }
+
+    9.01% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 12.002, 0, 1);
+    }
+
+    13.51% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -8.742, 0, 1);
+    }
+
+    17.92% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -13.922, 0, 1);
+    }
+
+    29.03% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -3.229, 0, 1);
+    }
+
+    34.63% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.593, 0, 1);
+    }
+
+    40.14% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1.543, 0, 1);
+    }
+
+    62.36% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.171, 0, 1);
+    }
+
+    84.68% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0.019, 0, 1);
+    }
+
+    100% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+}
+
+
 .game-over {
     position: absolute;
     background-color: rgb(255, 222, 13);
@@ -261,12 +312,12 @@ h3 {
 
 .prize {
     position: absolute;
-    left:65px;
+    left: 60px;
     bottom: 120px;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(52, 240, 6, 0.8);
 }
 
-.reset{
+.reset {
     position: absolute;
     border: 0;
     border-radius: 5px;
@@ -282,10 +333,4 @@ h3 {
 
 .reset:hover {
     background-color: rgb(219, 207, 207);
-}
-
-.glow {
-    position: absolute;
-    left: 270px;
-    top: 550px;
 }

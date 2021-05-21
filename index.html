@@ -26,36 +26,40 @@
                 <button id="scissors"></button>
                 <button id="rock"></button>
             </div>
+            <!-- Clicked Preview -->
             <div>
                 <img id="clicked-r" style="display: none" src="./assets/img/r-trimed.png">
                 <img id="clicked-p" style="display: none" src="./assets/img/p-trimed.png">
                 <img id="clicked-s" style="display: none" src="./assets/img/s-trimed.png">
             </div>
+             <!-- Guessed Preview -->
             <div>
                 <img id="compguess-r" style="display: none" src="./assets/img/r-trimed.png">
                 <img id="compguess-p" style="display: none" src="./assets/img/p-trimed.png">
                 <img id="compguess-s" style="display: none" src="./assets/img/s-trimed.png">
             </div>
+            <!-- Winmsg Container -->
             <div class="win-container">
                 <h1 class="winner">-----</h1>
             </div>
-            <div class="rounds-input">
-                number of rounds (5-100):
+            <!-- Number of Rounds -->
+            <div class="rounds-input">Number of Rounds (5-100):
                 <input id="input-value" type="number" name="numberofrounds" min="5" max="100" step="5" value="10">
+                <br>
+                5<input type="radio" name="myRadios" onchange="handleChange(this);" value="5" />
+                10<input type="radio" name="myRadios" onchange="handleChange(this);" value="10" />
+                15<input type="radio" name="myRadios" onchange="handleChange(this);" value="15" />
+                20<input type="radio" name="myRadios" onchange="handleChange(this);" value="20" />
             </div>
+            <!-- Pop Up Window -->
             <div class="popup-container" style="display: none">
                 <h1 class='game-over'>GAME OVER</h1>
                 <h2 class='winner-call'></h2>
-                <p class='prize' style="display: none">Congratulations You Won Nothing</p>
+                <p class='prize' style="display: none">Congratulations &ensp; &nbsp; You Won Nothing</p>
                 <button type="button" class='reset'>Play Again</button>
             </div>
-            <img src="./assets/img/glow.png" alt="glow">
-        </div>
+           </div>
     </div>
-
-
-
-
     <script src="assets/js/main.js"></script>
 </body>
 
