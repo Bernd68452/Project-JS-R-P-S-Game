@@ -1,3 +1,4 @@
+'use strict';
 /* "Const" Setting need in functions */
 const rock = document.querySelector('#rock').addEventListener('click', game);
 const paper = document.querySelector('#paper').addEventListener('click', game);
