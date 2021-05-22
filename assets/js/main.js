@@ -19,7 +19,8 @@ const prize = document.querySelector('.prize');
 
 function handleChange(src) {
     alert(src.value);
-    }
+}
+
     let info = alert("Please enter your Gamertag before the game starts!");
     let gamerName = prompt("Gamertag:", "");
     function requiredFunction() {
