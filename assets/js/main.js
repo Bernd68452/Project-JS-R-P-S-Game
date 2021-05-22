@@ -20,6 +20,18 @@ const prize = document.querySelector('.prize');
 function handleChange(src) {
     alert(src.value);
     }
+    let info = alert("Please enter your Gamertag before the game starts!");
+    let gamerName = prompt("Gamertag:", "");
+    function requiredFunction() {
+        document.getElementById("gamer").innerHTML = gamerName;
+    }
+    requiredFunction();
+    
+    function roundsSelected() {
+        let selected = document.querySelector('input[type="radio"]:checked');
+        return selected;
+    }
+
 
 function game(e) {
     const computerSelection = computerPlay();
