@@ -17,22 +17,17 @@ const popupContainer = document.querySelector('.popup-container');
 const winnerCall = document.querySelector('.winner-call');
 const prize = document.querySelector('.prize');
 
+/* Radio Buttons */
 function handleChange(src) {
     alert(src.value);
 }
 
-    let info = alert("Please enter your Gamertag before the game starts!");
-    let gamerName = prompt("Gamertag:", "");
-    function requiredFunction() {
-        document.getElementById("gamer").innerHTML = gamerName;
-    }
-    requiredFunction();
-    
-    function roundsSelected() {
-        let selected = document.querySelector('input[type="radio"]:checked');
-        return selected;
-    }
 
+/* Before play*/
+let info = alert("Please enter your Gamertag before the game starts!");
+let gamerName = prompt("Gamertag:", "");
+
+   
 
 function game(e) {
     const computerSelection = computerPlay();
@@ -45,7 +40,7 @@ function game(e) {
     gameEnd();
 }
 
-//Match
+/* Match */
 function playRound(computerSelection, e) {
     if (computerSelection === e.target.id) {
         winMsg.innerHTML = 'Draw';
@@ -90,7 +85,7 @@ function playRound(computerSelection, e) {
     }
 }
 
-//Comp and User Action Display Selection 
+/* Comp and User Action Display Selection  */
 function actionDisplay(computerSelection, e) {
     if (e.target.id == 'rock') {
         clickedRock.style.display = 'block';
@@ -135,7 +130,7 @@ function gameEnd() {
     }
 }
 
-// Play Again Button
+/* Play Again Button */
 function resetGame() { 
     playerScore.innerHTML = '0';
     compScore.innerHTML = '0';
