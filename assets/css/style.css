@@ -8,24 +8,7 @@ html {
 
 }
 
-@media only screen and (max-width: 300px) {
-    html {
-        background-image: url(/assets/img/htmlbg.png);
 
-    }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
-    html {
-        background-image: url(/assets/img/htmlbg.png);
-    }
-}
-
-@media screen and (min-width: 2560px) {
-    html {
-        background-image: url(/assets/img/htmlbg.png);
-    }
-}
 
 
 .container {
@@ -357,4 +340,23 @@ h3 {
 
 .reset:hover {
     background-color: rgb(219, 207, 207);
+}
+
+@media only screen and (max-width: 300px) {
+    html {
+        background-image: url(/assets/img/htmlbg.png);
+
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    html {
+        background-image: url(/assets/img/htmlbg.png);
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    html {
+        background-image: url(/assets/img/htmlbg.png);
+    }
 }
