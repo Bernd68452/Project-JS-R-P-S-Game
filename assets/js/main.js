@@ -19,6 +19,18 @@ const popupContainer = document.querySelector('.popup-container');
 const winnerCall = document.querySelector('.winner-call');
 const prize = document.querySelector('.prize');
 
+/*Sound*/
+function play() {
+    let audio = document.getElementById("audio");
+    audio.play();
+}
+
+function pause() {
+    let audio = document.getElementById("audio");
+    audio.pause();
+}
+
+
 /* Radio Buttons */
 function handleChange(src) {
     alert(src.value);
