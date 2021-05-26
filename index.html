@@ -28,15 +28,15 @@
             </div>
             <!-- Clicked Preview -->
             <div>
-                <img id="clicked-r" style="display: none" src="./assets/img/r-trimed.png">
-                <img id="clicked-p" style="display: none" src="./assets/img/p-trimed.png">
-                <img id="clicked-s" style="display: none" src="./assets/img/s-trimed.png">
+                <img src="./assets/img/r-trimed.pngalt" id="clicked-r" alt="r-trimed" style="display: none">
+                <img src="./assets/img/p-trimed.png" id="clicked-p" alt="p-trimed" style="display: none">
+                <img src="./assets/img/s-trimed.png" id="clicked-s" alt="s-trimed" style="display: none">
             </div>
-             <!-- Guessed Preview -->
+            <!-- Guessed Preview -->
             <div>
-                <img id="compguess-r" style="display: none" src="./assets/img/r-trimed.png">
-                <img id="compguess-p" style="display: none" src="./assets/img/p-trimed.png">
-                <img id="compguess-s" style="display: none" src="./assets/img/s-trimed.png">
+                <img src="./assets/img/r-trimed.png" id="compguess-r" alt="r-trimed" style="display: none">
+                <img src="./assets/img/p-trimed.png" id="compguess-p" alt="p-trimed" style="display: none">
+                <img src="./assets/img/s-trimed.png" id="compguess-s" alt="s-trimed" style="display: none">
             </div>
             <!-- Winmsg Container -->
             <div class="win-container">
@@ -44,13 +44,18 @@
             </div>
             <!-- Number of Rounds -->
             <div class="rounds-input">Number of Rounds (5-100):
-                <input id="input-value" type="number" name="numberofrounds" min="5" max="100" step="5" value="10">👈Click me
+                <input id="input-value" type="number" name="numberofrounds" min="5" max="100" step="5"
+                    value="10">👈Click me
                 <br>
-                5<input type="radio" name="myRadios" onchange="handleChange(this);" value="5 No Function  😝  😝  😝 " />
-                10<input type="radio" name="myRadios" onchange="handleChange(this);" value="10 No Function  😝  😝  😝 " />
-                15<input type="radio" name="myRadios" onchange="handleChange(this);" value="15 No Function  😝  😝  😝 " />
-                20<input type="radio" name="myRadios" onchange="handleChange(this);" value="20 No Function  😝  😝  😝 " />
-           </div>
+                5<input type="radio" name="myRadios" onchange="handleChange(this);"
+                    value="5 No Function  😝  😝  😝 " />
+                10<input type="radio" name="myRadios" onchange="handleChange(this);"
+                    value="10 No Function  😝  😝  😝 " />
+                15<input type="radio" name="myRadios" onchange="handleChange(this);"
+                    value="15 No Function  😝  😝  😝 " />
+                20<input type="radio" name="myRadios" onchange="handleChange(this);"
+                    value="20 No Function  😝  😝  😝 " />
+            </div>
             <!-- Pop Up Window -->
             <div class="popup-container" style="display: none">
                 <h1 class='game-over'>GAME OVER</h1>
@@ -59,13 +64,11 @@
                 <button type="button" class='reset'>Play Again</button>
             </div>
             <div></div>
-                <input type="button" value="PLAY" onclick="play()">
-                <input type="button" value="STOP" onclick="pause()">
-                <audio id="audio" src="assets/audio/Magical Sound Shower 64-The Great Giana Sisters.mp3"></audio>
+            <input type="button" value="PLAY" onclick="play()">
+            <input type="button" value="STOP" onclick="pause()">
+            <audio id="audio" src="assets/audio/GianaSisters.mp3"></audio>
             <!-- MP3 from https://remix.kwed.org       -->
-            </audio>
-        </div>   
-</div>
+        </div>
     </div>
     <script src="assets/js/main.js"></script>
 </body>
