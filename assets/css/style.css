@@ -63,6 +63,7 @@ h3 {
 .player-weapons-box {
     position: absolute;
     background-color: rgba(48, 48, 48, 0.8);
+    border-radius: 10px;
     height: 10.625em;
     width: 18.75em;
     right: 1.25em;
